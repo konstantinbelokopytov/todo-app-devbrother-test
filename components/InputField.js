@@ -5,13 +5,13 @@ const InputField = ({ saveTask }) => {
 
     const [value, setValue] = useState('')
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault()
         saveTask(value)
         setValue('')
     }
 
-    const handleChange = e => setValue(e.target.value)
+    const handleChange = (e) => setValue(e.target.value)
     
     return (
         <form
